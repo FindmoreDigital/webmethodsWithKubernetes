@@ -1,0 +1,103 @@
+type Query{
+	getProductTypeMaster(continue: String!): ResponseProductTypeMaster
+	
+	getCommodityTypeMaster(continue: String!): [ InputCommodityTypeMaster ]
+	getCommodityTypeMaster2(continue: String!): ResponseCommodityTypeMaster
+	
+	getCommodityMaster(continue: String!): ResponseCommodityMaster
+	
+	getCustomerMaster(continue: String!, StartTime: String!, EndTime: String!): ResponseCustomerMaster
+	
+	getGroupMaster(continue: String!): ResponseGroupMaster
+	
+	getAirportPair(continue: String!, StartTime: String!, EndTime: String!): ResponseAirportPair
+	
+}
+
+type InputProductTypeMaster  {
+	ProductTypeCode: String,
+	ProductTypeDescription: String
+}
+
+type ResponseProductTypeMaster {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InputProductTypeMaster]
+}
+
+
+type InputCommodityTypeMaster {
+	CommodityTypeCode: String,
+	CommodityTypeDescription: String
+}
+
+type ResponseCommodityTypeMaster {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InputCommodityTypeMaster]
+}
+
+
+type InputCommodityMaster {
+	CommodityCode: String,
+	CommodityTypeCode: String,
+	CommodityDescription: String
+}
+type ResponseCommodityMaster {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InputCommodityMaster]
+}
+
+
+type InputCustomerMaster {
+	CustomerCode: String,
+	CustomerName: String,
+	Country: String,
+	Station: String,
+	Status: String
+}
+type ResponseCustomerMaster {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InputCustomerMaster]
+}
+
+
+type InputGroupItems {
+	GroupItemCode: String
+}
+type InputGroups {
+	GroupCode: String,
+	GroupDescription: String,
+	GroupCategory: String,
+	GroupItems: [ InputGroupItems ]
+}
+type InpeGroupType {
+	GroupType: String,
+	Groups: [ InputGroups ]
+}
+type ResponseGroupMaster {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InpeGroupType]
+}
+
+
+type InputAirportPair {
+	Origin: String,
+	Destination: String,
+	FlightDistance: String,
+	Status: String
+}
+type ResponseAirportPair {
+	success: String,
+	message: String,
+	continue: String,
+	results: [InputAirportPair]
+}

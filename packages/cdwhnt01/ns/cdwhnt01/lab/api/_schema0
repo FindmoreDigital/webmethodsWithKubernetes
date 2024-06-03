@@ -1,0 +1,19 @@
+type Query {
+  results: [Result]
+}
+
+type Result {
+  GroupType: String
+  Groups: [Group]
+}
+
+type Group {
+  GroupCode: String
+  GroupDescription: String
+  GroupCategory: String
+  GroupItems: [GroupItem]
+}
+
+type GroupItem {
+  GroupItemCode: String
+}

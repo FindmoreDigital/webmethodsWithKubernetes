@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">graphqldescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">cdwhnt01.GraphQL:api</value>
+  <value name="node_pkg">cdwhnt01</value>
+  <value name="node_comment"></value>
+  <value name="is_public">false</value>
+  <array name="operationTypes" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Query</value>
+      <value name="type">query</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getProductTypeMaster</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getProductTypeMasterResolver</value>
+          <value name="type">ResponseProductTypeMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getCommodityTypeMaster</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getCommodityTypeMasterResolver</value>
+          <value name="type">InputCommodityTypeMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getCommodityTypeMaster2</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getCommodityTypeMaster2Resolver</value>
+          <value name="type">ResponseCommodityTypeMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getCommodityMaster</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getCommodityMasterResolver</value>
+          <value name="type">ResponseCommodityMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getCustomerMaster</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getCustomerMasterResolver</value>
+          <value name="type">ResponseCustomerMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getGroupMaster</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getGroupMasterResolver</value>
+          <value name="type">ResponseGroupMaster</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="name">getAirportPair</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.Query:getAirportPairResolver</value>
+          <value name="type">ResponseAirportPair</value>
+        </record>
+      </array>
+    </record>
+  </array>
+  <array name="types" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseProductTypeMaster</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseProductTypeMaster:resultsResolver</value>
+          <value name="type">InputProductTypeMaster</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCommodityTypeMaster</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseCommodityTypeMaster:resultsResolver</value>
+          <value name="type">InputCommodityTypeMaster</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCommodityMaster</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseCommodityMaster:resultsResolver</value>
+          <value name="type">InputCommodityMaster</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCustomerMaster</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseCustomerMaster:resultsResolver</value>
+          <value name="type">InputCustomerMaster</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputGroups</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">GroupItems</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.InputGroups:GroupItemsResolver</value>
+          <value name="type">InputGroupItems</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InpeGroupType</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">Groups</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.InpeGroupType:GroupsResolver</value>
+          <value name="type">InputGroups</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseGroupMaster</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseGroupMaster:resultsResolver</value>
+          <value name="type">InpeGroupType</value>
+        </record>
+      </array>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseAirportPair</value>
+      <array name="resolvers" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="name">results</value>
+          <value name="service">cdwhnt01.GraphQL.api_.resolvers.ResponseAirportPair:resultsResolver</value>
+          <value name="type">InputAirportPair</value>
+        </record>
+      </array>
+    </record>
+  </array>
+  <array name="otherTypes" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputProductTypeMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseProductTypeMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputCommodityTypeMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCommodityTypeMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputCommodityMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCommodityMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputCustomerMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseCustomerMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputGroupItems</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputGroups</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InpeGroupType</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseGroupMaster</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">InputAirportPair</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ResponseAirportPair</value>
+      <value name="graphqlType">OBJECT</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Int</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Integer</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Float</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Double</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">String</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">String</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Boolean</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Boolean</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">ID</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">String</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Long</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Long</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">BigInteger</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.math.BigInteger</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">BigDecimal</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.math.BigDecimal</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Short</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Short</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="name">Char</value>
+      <value name="graphqlType">SCALAR</value>
+      <value name="wmType">java.lang.Character</value>
+    </record>
+  </array>
+  <array name="dataLoaders" type="record" depth="1">
+  </array>
+  <record name="interfaceObjectMapping" javaclass="com.wm.util.Values">
+  </record>
+  <record name="unionObjectMapping" javaclass="com.wm.util.Values">
+  </record>
+  <value name="graphQLSchemaFile">_schema0</value>
+  <value name="maxQueryComplexity">-1</value>
+  <value name="maxQueryDepth">-1</value>
+  <array name="graphqlTypeToDocumentMapping" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputProductTypeMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputProductTypeMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseProductTypeMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseProductTypeMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputCommodityTypeMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputCommodityTypeMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseCommodityTypeMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseCommodityTypeMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputCommodityMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputCommodityMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseCommodityMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseCommodityMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputCustomerMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputCustomerMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseCustomerMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseCustomerMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputGroupItems</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputGroupItems</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputGroups</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputGroups</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InpeGroupType</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InpeGroupType</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseGroupMaster</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseGroupMaster</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">InputAirportPair</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:InputAirportPair</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="graphqlTypeName">ResponseAirportPair</value>
+      <value name="documentTypeName">cdwhnt01.GraphQL.api_.types:ResponseAirportPair</value>
+    </record>
+  </array>
+  <value name="sourceUri">file:///C:\Users\Findmore\Desktop\Projeto\cdwhnt01.json</value>
+</Values>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getAllCostumers_pagesCalculation</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFNYXAgcGlwZU1hcCA9IG5ldyBJRGF0YU1hcChwaXBlbGluZSk7DQoNCmZsb2F0IGNvdW50
+ID0gRmxvYXQudmFsdWVPZihwaXBlTWFwLmdldEFzU3RyaW5nKCJjb3VudCIpKTsNCmZsb2F0IGxp
+bWl0ID0gRmxvYXQudmFsdWVPZihwaXBlTWFwLmdldEFzU3RyaW5nKCJsaW1pdCIpKTsNCmZsb2F0
+IGN1cnNyID0gRmxvYXQudmFsdWVPZihwaXBlTWFwLmdldEFzU3RyaW5nKCJjdXJzb3IiKSk7DQoN
+CmlmKGN1cnNyID4gY291bnQpIHsNCmludCBkaWZmID0gKGludCkoY3Vyc3IgLSBjb3VudCk7DQpj
+dXJzciAtPSBkaWZmOw0KfQ0KDQppbnQgbnVtYmVyX29mX3BhZ2VzID0gKGludCkoKGNvdW50IC8g
+bGltaXQpICsgMC41Zik7DQppbnQgY3VycmVudF9wYWdlID0gKGludCkobnVtYmVyX29mX3BhZ2Vz
+IC0gKGludCkoKChjb3VudCAtIGN1cnNyKSAvIGxpbWl0KSArIDAuNWYpKTsNCg0KcGlwZU1hcC5w
+dXQoInBhZ2VzIiwgU3RyaW5nLmZvcm1hdCgiUGFnZSAlZCBvZiAlZCIsIGN1cnJlbnRfcGFnZSwg
+bnVtYmVyX29mX3BhZ2VzKSk7</value>
+</Values>

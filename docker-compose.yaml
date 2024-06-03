@@ -1,0 +1,32 @@
+version: '3'
+services:
+  wm-msr:
+    image: "tiagomateuscarvalho/wm-msr-demo:10.15"
+    ports:
+      - "5555:5555"
+    environment:
+      - PERSIST_LOGS
+      - PERSIST_CONFIGS
+      - SAG_IS_CONFIG_PROPERTIES=/home/application.properties
+    networks:
+      - postgresql-net
+
+  postgresql:
+    image: "postgres:latest"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=123
+    volumes:
+      - ./sql/init-schema.sql:/docker-entrypoint-initdb.d/init-schema.sql
+      - postgresql_data:/var/lib/postgresql/data
+    networks:
+      postgresql-net:
+        aliases:
+          - postgresql
+
+networks:
+  postgresql-net:
+volumes:
+  postgresql_data:

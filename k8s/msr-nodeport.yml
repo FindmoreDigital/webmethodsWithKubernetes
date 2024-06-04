@@ -10,4 +10,4 @@ spec:
       port: 5555
       targetPort: 555
   selector:
-    app: wm-msr
+    app: msr-service

@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgresql
+  namespace: webmethods
+  labels:
+    app: postgresql
+spec:
+  selector:
+    matchLabels:
+      app: postgresql
+  serviceName: "postgresql"
+  replicas: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: postgresql
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: postgresql
+        image: <your_username>/postgresql:16.3
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - mountPath: /var/lib/postgresql/data
+          name: postgresql-data
+        env: 
+        - name: "POSTGRES_PASSWORD"
+          value: "123"
+        - name: "POSTGRES_DATABASE"
+          value: "postgres"
+  volumeClaimTemplates:
+  - metadata:
+      name: postgresql-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName:
+      resources:
+        requests:
+          storage: 1Gi

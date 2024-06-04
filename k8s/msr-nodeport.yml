@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: msr-nodeport
+  namespace: webmethods
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 31555
+      port: 5555
+      targetPort: 555
+  selector:
+    app: wm-msr
